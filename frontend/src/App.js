@@ -553,6 +553,28 @@ function App() {
           </motion.div>
         </div>
       </section>
+
+      {/* Floating Registration Button */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ 
+          opacity: showFloatingButton ? 1 : 0,
+          scale: showFloatingButton ? 1 : 0
+        }}
+        className="fixed bottom-6 right-6 z-50"
+      >
+        <motion.a
+          href="https://pages.razorpay.com/pl_MXSyX6alBy4PEb/view"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold p-4 rounded-full shadow-2xl transition-all duration-300 flex items-center gap-2"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <Zap size={24} />
+          <span className="hidden sm:inline">Register</span>
+        </motion.a>
+      </motion.div>
     </div>
   );
 }
