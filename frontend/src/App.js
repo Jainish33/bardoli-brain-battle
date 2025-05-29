@@ -522,30 +522,42 @@ function App() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <motion.a
+              <a
                 href="https://pages.razorpay.com/pl_MXSyX6alBy4PEb/view"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-6 px-12 rounded-xl text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl"
-                whileHover={{ y: -5 }}
-                whileTap={{ scale: 0.95 }}
+                className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-6 px-12 rounded-xl text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-block"
               >
                 🏆 REGISTER FOR BATTLE
-              </motion.a>
+              </a>
               
-              <motion.a
+              <a
                 href="https://forms.gle/UiRbmAyMBa8S2ez56"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-bold py-6 px-12 rounded-xl text-xl border border-white/30 transition-all duration-300"
-                whileHover={{ y: -5 }}
-                whileTap={{ scale: 0.95 }}
+                className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-bold py-6 px-12 rounded-xl text-xl border border-white/30 transition-all duration-300 inline-block"
               >
                 🧠 Test Your Skills
-              </motion.a>
+              </a>
             </div>
 
+            {/* Social Media Section */}
             <div className="pt-8">
+              <div className="flex justify-center items-center gap-4 mb-6">
+                <span className="text-white/80 text-lg">Follow us on:</span>
+                <motion.a
+                  href="https://instagram.com/bardolitown"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white p-3 rounded-full transition-all duration-300 flex items-center gap-2"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Instagram size={24} />
+                  <span className="hidden sm:inline font-semibold">@bardolitown</span>
+                </motion.a>
+              </div>
+              
               <p className="text-white/60 text-sm">
                 © 2025 Bardoli Brain Battle. All rights reserved.
               </p>
