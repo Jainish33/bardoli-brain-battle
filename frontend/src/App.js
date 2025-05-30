@@ -468,6 +468,36 @@ function HomePage() {
                 Send Message
               </motion.button>
             </form>
+            
+            {/* Direct Contact Info */}
+            <div className="mt-8 pt-8 border-t border-white/20">
+              <h3 className="text-xl font-bold text-white mb-4 text-center">Or Contact Us Directly</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <motion.a
+                  href="tel:+919327880168"
+                  className="flex items-center justify-center gap-3 bg-green-500/20 hover:bg-green-500/30 border border-green-400/30 rounded-xl p-4 text-white transition-all duration-300"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <span className="text-2xl">📞</span>
+                  <div>
+                    <div className="font-semibold">Call Us</div>
+                    <div className="text-green-400">+91 93278 80168</div>
+                  </div>
+                </motion.a>
+                
+                <motion.a
+                  href="mailto:bardolitownquiz@gmail.com"
+                  className="flex items-center justify-center gap-3 bg-blue-500/20 hover:bg-blue-500/30 border border-blue-400/30 rounded-xl p-4 text-white transition-all duration-300"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <span className="text-2xl">📧</span>
+                  <div>
+                    <div className="font-semibold">Email Us</div>
+                    <div className="text-blue-400">bardolitownquiz@gmail.com</div>
+                  </div>
+                </motion.a>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
