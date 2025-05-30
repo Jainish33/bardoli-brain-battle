@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
             >
               <Shield size={24} />
               <span>Bardoli Brain Battle</span>
-            </Shield>
+            </motion.div>
           </div>
 
           {/* Content */}
