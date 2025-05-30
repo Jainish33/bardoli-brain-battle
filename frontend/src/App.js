@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   Trophy, 
@@ -18,6 +19,11 @@ import {
   Zap
 } from 'lucide-react';
 import './App.css';
+
+// Import policy pages
+import TermsConditions from './TermsConditions';
+import PrivacyPolicy from './PrivacyPolicy';
+import CancellationRefund from './CancellationRefund';
 
 const CountdownTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({
