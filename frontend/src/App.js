@@ -101,7 +101,7 @@ const FAQ = ({ question, answer }) => {
   );
 };
 
-function App() {
+function HomePage() {
   const gameDate = new Date('2025-06-22T12:00:00').getTime();
   const [showFloatingButton, setShowFloatingButton] = useState(false);
 
