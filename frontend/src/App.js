@@ -24,6 +24,7 @@ import './App.css';
 import TermsConditions from './TermsConditions';
 import PrivacyPolicy from './PrivacyPolicy';
 import CancellationRefund from './CancellationRefund';
+import AboutUs from './AboutUs';
 
 const CountdownTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({
