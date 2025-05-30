@@ -567,33 +567,33 @@ function HomePage() {
               
               {/* Policy Links */}
               <div className="flex flex-wrap justify-center items-center gap-4 mb-6 text-sm">
-                <a
-                  href="/about-us"
+                <Link
+                  to="/about-us"
                   className="text-white/60 hover:text-yellow-400 transition-colors underline"
                 >
                   About Us
-                </a>
+                </Link>
                 <span className="text-white/40">•</span>
-                <a
-                  href="/terms-conditions"
+                <Link
+                  to="/terms-conditions"
                   className="text-white/60 hover:text-yellow-400 transition-colors underline"
                 >
                   Terms & Conditions
-                </a>
+                </Link>
                 <span className="text-white/40">•</span>
-                <a
-                  href="/privacy-policy"
+                <Link
+                  to="/privacy-policy"
                   className="text-white/60 hover:text-yellow-400 transition-colors underline"
                 >
                   Privacy Policy
-                </a>
+                </Link>
                 <span className="text-white/40">•</span>
-                <a
-                  href="/cancellation-refund"
+                <Link
+                  to="/cancellation-refund"
                   className="text-white/60 hover:text-yellow-400 transition-colors underline"
                 >
                   Cancellation & Refund Policy
-                </a>
+                </Link>
               </div>
               
               <p className="text-white/60 text-sm">
