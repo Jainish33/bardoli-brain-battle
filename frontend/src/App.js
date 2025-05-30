@@ -597,4 +597,4 @@ function HomePage() {
   );
 }
 
-export default App;
+export default HomePage;
