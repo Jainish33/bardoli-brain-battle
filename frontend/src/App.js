@@ -568,6 +568,13 @@ function HomePage() {
               {/* Policy Links */}
               <div className="flex flex-wrap justify-center items-center gap-4 mb-6 text-sm">
                 <a
+                  href="/about-us"
+                  className="text-white/60 hover:text-yellow-400 transition-colors underline"
+                >
+                  About Us
+                </a>
+                <span className="text-white/40">•</span>
+                <a
                   href="/terms-conditions"
                   className="text-white/60 hover:text-yellow-400 transition-colors underline"
                 >
