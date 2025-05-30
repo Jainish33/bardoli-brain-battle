@@ -621,4 +621,17 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/cancellation-refund" element={<CancellationRefund />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
