@@ -564,6 +564,30 @@ function HomePage() {
                 </motion.a>
               </div>
               
+              {/* Policy Links */}
+              <div className="flex flex-wrap justify-center items-center gap-4 mb-6 text-sm">
+                <a
+                  href="/terms-conditions"
+                  className="text-white/60 hover:text-yellow-400 transition-colors underline"
+                >
+                  Terms & Conditions
+                </a>
+                <span className="text-white/40">•</span>
+                <a
+                  href="/privacy-policy"
+                  className="text-white/60 hover:text-yellow-400 transition-colors underline"
+                >
+                  Privacy Policy
+                </a>
+                <span className="text-white/40">•</span>
+                <a
+                  href="/cancellation-refund"
+                  className="text-white/60 hover:text-yellow-400 transition-colors underline"
+                >
+                  Cancellation & Refund Policy
+                </a>
+              </div>
+              
               <p className="text-white/60 text-sm">
                 © 2025 Bardoli Brain Battle. All rights reserved.
               </p>
