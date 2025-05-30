@@ -349,13 +349,46 @@ const AboutUs = () => {
               
               <motion.a
                 href="mailto:bardolitownquiz@gmail.com"
-                className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-bold py-4 px-8 rounded-xl text-lg border border-white/30 transition-all duration-300"
+                className="bg-blue-500/20 backdrop-blur-md hover:bg-blue-500/30 text-white font-bold py-4 px-8 rounded-xl text-lg border border-blue-400/30 transition-all duration-300 flex items-center gap-3"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >
-                📧 Contact Us
+                📧 Email Us
+              </motion.a>
+
+              <motion.a
+                href="tel:+919327880168"
+                className="bg-green-500/20 backdrop-blur-md hover:bg-green-500/30 text-white font-bold py-4 px-8 rounded-xl text-lg border border-green-400/30 transition-all duration-300 flex items-center gap-3"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                📞 Call Us
               </motion.a>
             </div>
+
+            {/* Contact Details */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-white/10 backdrop-blur-md rounded-2xl p-6 max-w-2xl mx-auto mt-8"
+            >
+              <h3 className="text-2xl font-bold text-white mb-4 text-center">Get in Touch</h3>
+              <div className="grid md:grid-cols-2 gap-4 text-center">
+                <div className="space-y-2">
+                  <div className="text-yellow-400 font-semibold">📞 Phone</div>
+                  <a href="tel:+919327880168" className="text-white hover:text-yellow-400 transition-colors">
+                    +91 93278 80168
+                  </a>
+                </div>
+                <div className="space-y-2">
+                  <div className="text-yellow-400 font-semibold">📧 Email</div>
+                  <a href="mailto:bardolitownquiz@gmail.com" className="text-white hover:text-yellow-400 transition-colors">
+                    bardolitownquiz@gmail.com
+                  </a>
+                </div>
+              </div>
+            </motion.div>
 
             <div className="pt-8">
               <p className="text-white/60 text-sm">
